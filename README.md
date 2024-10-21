@@ -1,12 +1,7 @@
-- 👋 Hi, I’m @bactiar291
-- 👀 I’m interested in ...
-- 🌱 I’m currently learning ...
-- 💞️ I’m looking to collaborate on ...
-- 📫 How to reach me ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
-
-<!---
-bactiar291/bactiar291 is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
-You can click the Preview link to take a look at your changes.
---->
+- 👋 Hai, saya @bactiar291
+- 👀 Saya tertarik untuk belajar dan meningkatkan keterampilan pemrograman saya.
+- 🌱 Saat ini saya sedang belajar berbagai bahasa pemrograman dan teknologi.
+- 💞️ Saya ingin berkolaborasi dalam proyek pemrograman, kontribusi open-source, dan tantangan pengembangan.
+- 📫 Cara menghubungi saya: Anda bisa menghubungi saya melalui profil GitHub saya atau melalui email.
+- 😄 Kata ganti: Dia (He/Him)
+- ⚡ Fakta menarik: Saya suka menjelajahi tantangan pemrograman baru dan terus meningkatkan keterampilan saya!
