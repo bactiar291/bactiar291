@@ -15,6 +15,6 @@
 
 
 ## Connect with Me
-[![Telegram](https://img.shields.io/badge/Telegram-26A5E4?style=flat&logo=telegram&logoColor=white)](https://t.me/+KluclWVD1WUwYjU9)
+[![Telegram](https://img.shields.io/badge/Telegram-26A5E4?style=flat&logo=telegram&logoColor=white)](https://t.me/xdroppppp)
 [![X](https://img.shields.io/badge/X-1DA1F2?style=flat&logo=x&logoColor=white)](https://x.com/anambactiar?t=Z3Vxm_V-Ie44wFTt-AaJnA&s=09)
 [![Warpcast](https://img.shields.io/badge/Warpcast-FF6600?style=flat&logo=warpcast&logoColor=white)](https://warpcast.com/anam01)
