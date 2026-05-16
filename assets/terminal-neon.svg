@@ -1,16 +1,16 @@
-<svg width="920" height="300" viewBox="0 0 920 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+<svg width="980" height="360" viewBox="0 0 980 360" fill="none" xmlns="http://www.w3.org/2000/svg">
   <defs>
-    <linearGradient id="frame" x1="0" y1="0" x2="920" y2="300" gradientUnits="userSpaceOnUse">
+    <linearGradient id="frame" x1="0" y1="0" x2="980" y2="360" gradientUnits="userSpaceOnUse">
       <stop stop-color="#39FF14"/>
       <stop offset="0.45" stop-color="#00E5FF"/>
-      <stop offset="1" stop-color="#7C3AED"/>
+      <stop offset="1" stop-color="#0A3D2B"/>
     </linearGradient>
-    <linearGradient id="leftGlow" x1="0" y1="0" x2="0" y2="300" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#39FF14"/>
-      <stop offset="0.55" stop-color="#00E5FF"/>
-      <stop offset="1" stop-color="#39FF14"/>
+    <linearGradient id="scan" x1="0" y1="0" x2="0" y2="360" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#39FF14" stop-opacity="0"/>
+      <stop offset="0.5" stop-color="#39FF14" stop-opacity="0.28"/>
+      <stop offset="1" stop-color="#39FF14" stop-opacity="0"/>
     </linearGradient>
-    <filter id="glow" x="-30%" y="-30%" width="160%" height="160%">
+    <filter id="glow" x="-35%" y="-35%" width="170%" height="170%">
       <feGaussianBlur stdDeviation="4" result="blur"/>
       <feColorMatrix in="blur" type="matrix" values="0 0 0 0 0.223 0 0 0 0 1 0 0 0 0 0.078 0 0 0 0.95 0"/>
       <feMerge>
@@ -18,39 +18,97 @@
         <feMergeNode in="SourceGraphic"/>
       </feMerge>
     </filter>
-    <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse">
-      <path d="M32 0H0V32" stroke="#1B3B34" stroke-width="1" opacity="0.35"/>
+    <filter id="softCyan" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feColorMatrix in="blur" type="matrix" values="0 0 0 0 0 0 0 0 0 0.898 0 0 0 0 1 0 0 0 0.65 0"/>
+      <feMerge>
+        <feMergeNode/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <pattern id="grid" width="34" height="34" patternUnits="userSpaceOnUse">
+      <path d="M34 0H0V34" stroke="#163528" stroke-width="1" opacity="0.36"/>
     </pattern>
+    <clipPath id="screenClip">
+      <rect x="34" y="28" width="912" height="304" rx="16"/>
+    </clipPath>
+    <style>
+      .mono { font-family: Consolas, Monaco, 'Courier New', monospace; }
+      .tiny { font-size: 13px; }
+      .small { font-size: 15px; }
+      .mid { font-size: 18px; }
+      .big { font-size: 31px; font-weight: 800; }
+      .scanline { animation: scanMove 4.2s linear infinite; }
+      .blink { animation: blink 1s steps(2, start) infinite; }
+      .tickerA { animation: ticker 9s linear infinite; }
+      .tickerB { animation: ticker 11s linear infinite; animation-delay: -3s; }
+      .pulse { animation: pulse 2.8s ease-in-out infinite; }
+      @keyframes scanMove {
+        0% { transform: translateY(-270px); opacity: 0; }
+        12% { opacity: 1; }
+        88% { opacity: 1; }
+        100% { transform: translateY(320px); opacity: 0; }
+      }
+      @keyframes blink {
+        0%, 48% { opacity: 1; }
+        49%, 100% { opacity: 0; }
+      }
+      @keyframes ticker {
+        0% { transform: translateY(0); opacity: 0; }
+        8% { opacity: 0.85; }
+        45% { opacity: 0.85; }
+        100% { transform: translateY(-118px); opacity: 0; }
+      }
+      @keyframes pulse {
+        0%, 100% { opacity: 0.45; }
+        50% { opacity: 1; }
+      }
+    </style>
   </defs>
 
-  <rect width="920" height="300" rx="18" fill="#050807"/>
-  <rect x="1" y="1" width="918" height="298" rx="17" stroke="url(#frame)" stroke-width="2" opacity="0.9"/>
-  <rect x="0" y="0" width="920" height="300" rx="18" fill="url(#grid)" opacity="0.55"/>
+  <rect width="980" height="360" rx="20" fill="#030604"/>
+  <rect width="980" height="360" rx="20" fill="url(#grid)" opacity="0.65"/>
+  <rect x="1.5" y="1.5" width="977" height="357" rx="18.5" stroke="url(#frame)" stroke-width="3" opacity="0.95"/>
 
-  <rect x="28" y="26" width="864" height="248" rx="14" fill="#07110D" stroke="#173A2C"/>
-  <rect x="28" y="26" width="864" height="44" rx="14" fill="#0D1712"/>
-  <path d="M28 56H892" stroke="#183C2D" stroke-width="1"/>
+  <g clip-path="url(#screenClip)">
+    <rect x="34" y="28" width="912" height="304" rx="16" fill="#07100B"/>
+    <rect x="34" y="28" width="912" height="48" rx="16" fill="#0B1710"/>
+    <path d="M34 76H946" stroke="#1D4C37" stroke-width="1"/>
 
-  <circle cx="54" cy="48" r="7" fill="#FF5F56"/>
-  <circle cx="77" cy="48" r="7" fill="#FFBD2E"/>
-  <circle cx="100" cy="48" r="7" fill="#27C93F"/>
-  <text x="132" y="53" fill="#7CEFA2" font-family="Consolas, Monaco, monospace" font-size="14">bactiar@github:~/profile</text>
+    <rect class="scanline" x="34" y="28" width="912" height="82" fill="url(#scan)"/>
 
-  <rect x="45" y="88" width="4" height="158" rx="2" fill="url(#leftGlow)" filter="url(#glow)"/>
+    <g opacity="0.34">
+      <text class="mono tiny tickerA" x="608" y="122" fill="#39FF14">0x7a9f::sync status=ok block=184293 seed=71</text>
+      <text class="mono tiny tickerA" x="608" y="150" fill="#00E5FF">trace ~/lab/web3 module: python js eth rpc</text>
+      <text class="mono tiny tickerA" x="608" y="178" fill="#8FFFB3">commit graph warmup :: reading docs :: refining flow</text>
+      <text class="mono tiny tickerB" x="608" y="244" fill="#39FF14">packet 91AF 22C0 77DA 09BC 48EE accepted</text>
+      <text class="mono tiny tickerB" x="608" y="272" fill="#00E5FF">profile render :: neon terminal :: ready</text>
+      <text class="mono tiny tickerB" x="608" y="300" fill="#8FFFB3">growth loop engaged :: publish with care</text>
+    </g>
+  </g>
 
-  <text x="72" y="112" fill="#39FF14" font-family="Consolas, Monaco, monospace" font-size="18" font-weight="700">$ whoami</text>
-  <text x="72" y="144" fill="#E9FFF0" font-family="Consolas, Monaco, monospace" font-size="22" font-weight="700">Bactiar Anam</text>
-  <text x="72" y="176" fill="#8FFFB3" font-family="Consolas, Monaco, monospace" font-size="17">Early-stage developer focused on Python, JS, and Web3.</text>
+  <circle cx="62" cy="52" r="7.5" fill="#FF5F56"/>
+  <circle cx="88" cy="52" r="7.5" fill="#FFBD2E"/>
+  <circle cx="114" cy="52" r="7.5" fill="#27C93F"/>
+  <text class="mono small" x="148" y="57" fill="#A6F7BC">anam@github:~/profile</text>
 
-  <text x="72" y="219" fill="#00E5FF" font-family="Consolas, Monaco, monospace" font-size="18" font-weight="700">$ current_path</text>
-  <text x="72" y="250" fill="#E9FFF0" font-family="Consolas, Monaco, monospace" font-size="17">learn -> build -> review -> improve -> publish</text>
+  <rect x="56" y="105" width="5" height="180" rx="2.5" fill="#39FF14" filter="url(#glow)"/>
+  <rect x="70" y="105" width="2" height="180" rx="1" fill="#00E5FF" opacity="0.55" filter="url(#softCyan)"/>
 
-  <rect x="625" y="100" width="210" height="34" rx="8" fill="#0B2018" stroke="#39FF14" opacity="0.95"/>
-  <text x="650" y="123" fill="#39FF14" font-family="Consolas, Monaco, monospace" font-size="15" font-weight="700">PYTHON</text>
+  <text class="mono mid" x="92" y="125" fill="#39FF14" font-weight="700">$ init profile --mode elegant</text>
+  <text class="mono big" x="92" y="170" fill="#EFFFF4" filter="url(#softCyan)">Anam Bactiar</text>
+  <text class="mono mid" x="92" y="205" fill="#8FFFB3">Python / JS / Web3 learner</text>
+  <text class="mono small" x="92" y="236" fill="#C9FFD7">Building a stronger developer foundation, one project at a time.</text>
+  <text class="mono mid" x="92" y="277" fill="#00E5FF" font-weight="700">$ status</text>
+  <text class="mono mid" x="180" y="277" fill="#EFFFF4">learning_active</text>
+  <rect class="blink" x="356" y="260" width="11" height="22" fill="#39FF14"/>
 
-  <rect x="625" y="148" width="210" height="34" rx="8" fill="#201B0B" stroke="#FFBD2E" opacity="0.95"/>
-  <text x="650" y="171" fill="#FFDB6E" font-family="Consolas, Monaco, monospace" font-size="15" font-weight="700">JS</text>
-
-  <rect x="625" y="196" width="210" height="34" rx="8" fill="#200B16" stroke="#FF5F56" opacity="0.95"/>
-  <text x="650" y="219" fill="#FF8A80" font-family="Consolas, Monaco, monospace" font-size="15" font-weight="700">WEB3</text>
+  <g class="pulse">
+    <rect x="620" y="126" width="244" height="34" rx="8" fill="#0B2018" stroke="#39FF14"/>
+    <text class="mono small" x="646" y="148" fill="#39FF14" font-weight="700">PYTHON FOUNDATION</text>
+    <rect x="620" y="176" width="244" height="34" rx="8" fill="#201B0B" stroke="#FFBD2E"/>
+    <text class="mono small" x="646" y="198" fill="#FFDB6E" font-weight="700">JS FUNDAMENTALS</text>
+    <rect x="620" y="226" width="244" height="34" rx="8" fill="#0B1720" stroke="#00E5FF"/>
+    <text class="mono small" x="646" y="248" fill="#74F0FF" font-weight="700">WEB3 EXPLORATION</text>
+  </g>
 </svg>

@@ -1,6 +1,8 @@
 <div align="center">
 
-![Header](https://capsule-render.vercel.app/api?type=waving&height=210&color=0:020403,35:0A3D2B,70:00D26A,100:00E5FF&text=Bactiar%20Anam&fontColor=ffffff&fontSize=50&fontAlignY=35&animation=fadeIn&desc=Python%20%7C%20JS%20%7C%20Web3%20Learner&descAlignY=59&descSize=18)
+<img src="./assets/terminal-neon.svg" width="96%" alt="Animated hacker-style terminal profile board" />
+
+![Header](https://capsule-render.vercel.app/api?type=waving&height=190&color=0:020403,35:0A3D2B,70:00D26A,100:00E5FF&text=Anam%20Bactiar&fontColor=ffffff&fontSize=50&fontAlignY=35&animation=fadeIn&desc=Python%20%7C%20JS%20%7C%20Web3%20Learner&descAlignY=59&descSize=18)
 
 [![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=24&duration=2400&pause=850&color=39FF14&center=true&vCenter=true&width=760&lines=Building+a+strong+developer+foundation;Learning+by+shipping+real+projects;Exploring+Web3+with+steady+progress;Growing+one+commit+at+a+time)](https://git.io/typing-svg)
 
@@ -12,7 +14,7 @@
 
 ## Introduction
 
-I am **Bactiar**, an early-stage developer focused on building a solid base in **Python**, **JS**, and **Web3**.
+I am **Anam Bactiar**, an early-stage developer focused on building a solid base in **Python**, **JS**, and **Web3**.
 
 I learn by creating small projects, improving old repositories, and studying how real developers structure readable work. My current goal is simple: become more consistent, more precise, and more confident with every project I publish.
 
@@ -44,14 +46,6 @@ Learning style  Build, review, improve, repeat
 Mindset         Start simple, polish steadily
 Direction       Better code quality and stronger project structure
 ```
-
-## Terminal Board
-
-<div align="center">
-
-<img src="./assets/terminal-neon.svg" width="94%" alt="Terminal neon profile board" />
-
-</div>
 
 ## GitHub Overview
 
