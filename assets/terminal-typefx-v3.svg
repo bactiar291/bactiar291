@@ -62,6 +62,11 @@
         <animate attributeName="width" values="0;325;325;0" keyTimes="0;0.34;0.8;1" dur="0.82s" begin="0.62s" repeatCount="indefinite"/>
       </rect>
     </clipPath>
+    <clipPath id="typePrompt" clipPathUnits="userSpaceOnUse">
+      <rect x="92" y="108" width="0" height="24">
+        <animate attributeName="width" values="0;330;330;0" keyTimes="0;0.18;0.84;1" dur="0.78s" repeatCount="indefinite"/>
+      </rect>
+    </clipPath>
     <style>
       .mono { font-family: Consolas, Monaco, 'Courier New', monospace; }
       .tiny { font-size: 13px; }
@@ -152,9 +157,9 @@
   <rect x="56" y="105" width="5" height="180" rx="2.5" fill="#39FF14" filter="url(#greenGlow)"/>
   <rect x="70" y="105" width="2" height="180" rx="1" fill="#00E5FF" opacity="0.55" filter="url(#cyanGlow)"/>
 
-  <text class="mono mid glitchCyan" x="92" y="125" fill="#00E5FF" font-weight="700">$ init profile --mode hacker-elegant</text>
-  <text class="mono mid glitchRed" x="92" y="125" fill="#FF5F56" font-weight="700">$ init profile --mode hacker-elegant</text>
-  <text class="mono mid flicker" x="92" y="125" fill="#39FF14" font-weight="700">$ init profile --mode hacker-elegant</text>
+  <text class="mono mid glitchCyan" x="92" y="125" fill="#00E5FF" font-weight="700" clip-path="url(#typePrompt)">$ init profile --mode standard</text>
+  <text class="mono mid glitchRed" x="92" y="125" fill="#FF5F56" font-weight="700" clip-path="url(#typePrompt)">$ init profile --mode standard</text>
+  <text class="mono mid flicker" x="92" y="125" fill="#39FF14" font-weight="700" clip-path="url(#typePrompt)">$ init profile --mode standard</text>
   <text class="mono big glitchCyan" x="92" y="170" fill="#00E5FF">Anam Bactiar</text>
   <text class="mono big glitchRed" x="92" y="170" fill="#FF5F56">Anam Bactiar</text>
   <text class="mono big" x="92" y="170" fill="#EFFFF4" filter="url(#cyanGlow)">Anam Bactiar</text>
