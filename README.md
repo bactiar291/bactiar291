@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="./assets/terminal-neon.svg" width="96%" alt="Animated hacker-style terminal profile board" />
+<img src="./assets/hacker-terminal-v2.svg" width="96%" alt="Animated hacker-style terminal profile board" />
 
 ![Header](https://capsule-render.vercel.app/api?type=waving&height=190&color=0:020403,35:0A3D2B,70:00D26A,100:00E5FF&text=Anam%20Bactiar&fontColor=ffffff&fontSize=50&fontAlignY=35&animation=fadeIn&desc=Python%20%7C%20JS%20%7C%20Web3%20Learner&descAlignY=59&descSize=18)
 

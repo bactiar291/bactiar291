@@ -1,0 +1,138 @@
+<svg width="980" height="360" viewBox="0 0 980 360" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="frame" x1="0" y1="0" x2="980" y2="360" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#39FF14"/>
+      <stop offset="0.42" stop-color="#00E5FF"/>
+      <stop offset="1" stop-color="#0A3D2B"/>
+    </linearGradient>
+    <linearGradient id="scan" x1="0" y1="0" x2="0" y2="360" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#39FF14" stop-opacity="0"/>
+      <stop offset="0.5" stop-color="#39FF14" stop-opacity="0.32"/>
+      <stop offset="1" stop-color="#39FF14" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="greenGlow" x="-35%" y="-35%" width="170%" height="170%">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feColorMatrix in="blur" type="matrix" values="0 0 0 0 0.223 0 0 0 0 1 0 0 0 0 0.078 0 0 0 0.9 0"/>
+      <feMerge>
+        <feMergeNode/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <filter id="cyanGlow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feColorMatrix in="blur" type="matrix" values="0 0 0 0 0 0 0 0 0 0.898 0 0 0 0 1 0 0 0 0.65 0"/>
+      <feMerge>
+        <feMergeNode/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <pattern id="grid" width="34" height="34" patternUnits="userSpaceOnUse">
+      <path d="M34 0H0V34" stroke="#163528" stroke-width="1" opacity="0.34"/>
+    </pattern>
+    <clipPath id="screenClip">
+      <rect x="34" y="28" width="912" height="304" rx="16"/>
+    </clipPath>
+    <style>
+      .mono { font-family: Consolas, Monaco, 'Courier New', monospace; }
+      .tiny { font-size: 13px; }
+      .small { font-size: 15px; }
+      .mid { font-size: 18px; }
+      .big { font-size: 31px; font-weight: 800; }
+      .scanline { animation: scanMove 2.6s linear infinite; }
+      .blink { animation: blink 0.78s steps(2, start) infinite; }
+      .pulse { animation: pulse 2.4s ease-in-out infinite; }
+      .flicker { animation: flicker 1.35s ease-in-out infinite; }
+      @keyframes scanMove {
+        0% { transform: translateY(-260px); opacity: 0; }
+        12% { opacity: 1; }
+        88% { opacity: 1; }
+        100% { transform: translateY(330px); opacity: 0; }
+      }
+      @keyframes blink {
+        0%, 48% { opacity: 1; }
+        49%, 100% { opacity: 0; }
+      }
+      @keyframes pulse {
+        0%, 100% { opacity: 0.58; }
+        50% { opacity: 1; }
+      }
+      @keyframes flicker {
+        0%, 100% { opacity: 0.38; }
+        50% { opacity: 0.92; }
+      }
+    </style>
+  </defs>
+
+  <rect width="980" height="360" rx="20" fill="#020403"/>
+  <rect width="980" height="360" rx="20" fill="url(#grid)" opacity="0.7"/>
+  <rect x="1.5" y="1.5" width="977" height="357" rx="18.5" stroke="url(#frame)" stroke-width="3" opacity="0.95"/>
+
+  <g clip-path="url(#screenClip)">
+    <rect x="34" y="28" width="912" height="304" rx="16" fill="#06100A"/>
+    <rect x="34" y="28" width="912" height="48" rx="16" fill="#0A1710"/>
+    <path d="M34 76H946" stroke="#1D4C37" stroke-width="1"/>
+
+    <g opacity="0.23" filter="url(#greenGlow)">
+      <g transform="translate(94 -190)">
+        <animateTransform attributeName="transform" type="translate" values="94 -210;94 80;94 360" dur="2.4s" repeatCount="indefinite"/>
+        <text class="mono tiny" y="0" fill="#39FF14">0101 7A9F :: rpc.sync()</text>
+        <text class="mono tiny" y="26" fill="#00E5FF">await web3.connect()</text>
+        <text class="mono tiny" y="52" fill="#8FFFB3">python.core.ready</text>
+        <text class="mono tiny" y="78" fill="#39FF14">0x91AF -> commit</text>
+        <text class="mono tiny" y="104" fill="#00E5FF">git status --short</text>
+      </g>
+      <g transform="translate(292 -260)">
+        <animateTransform attributeName="transform" type="translate" values="292 -260;292 40;292 380" dur="2s" begin="0.25s" repeatCount="indefinite"/>
+        <text class="mono tiny" y="0" fill="#00E5FF">module.js: pass</text>
+        <text class="mono tiny" y="26" fill="#39FF14">block=184293 ok</text>
+        <text class="mono tiny" y="52" fill="#8FFFB3">learn.build.repeat</text>
+        <text class="mono tiny" y="78" fill="#39FF14">payload 22C0 77DA</text>
+        <text class="mono tiny" y="104" fill="#00E5FF">trace route clean</text>
+      </g>
+      <g transform="translate(520 -220)">
+        <animateTransform attributeName="transform" type="translate" values="520 -220;520 90;520 370" dur="1.85s" begin="0.5s" repeatCount="indefinite"/>
+        <text class="mono tiny" y="0" fill="#39FF14">hash: A9F1C0DE</text>
+        <text class="mono tiny" y="26" fill="#00E5FF">wallet.read=false</text>
+        <text class="mono tiny" y="52" fill="#8FFFB3">docs.open()</text>
+        <text class="mono tiny" y="78" fill="#39FF14">render profile</text>
+        <text class="mono tiny" y="104" fill="#00E5FF">push origin main</text>
+      </g>
+      <g transform="translate(730 -300)">
+        <animateTransform attributeName="transform" type="translate" values="730 -300;730 45;730 390" dur="2.25s" begin="0.8s" repeatCount="indefinite"/>
+        <text class="mono tiny" y="0" fill="#00E5FF">JS event loop</text>
+        <text class="mono tiny" y="26" fill="#39FF14">0xC0FFEE online</text>
+        <text class="mono tiny" y="52" fill="#8FFFB3">web3 journey</text>
+        <text class="mono tiny" y="78" fill="#39FF14">commit +1</text>
+        <text class="mono tiny" y="104" fill="#00E5FF">profile ready</text>
+      </g>
+    </g>
+
+    <rect class="scanline" x="34" y="28" width="912" height="82" fill="url(#scan)"/>
+    <rect x="34" y="78" width="912" height="254" fill="#06100A" opacity="0.24"/>
+  </g>
+
+  <circle cx="62" cy="52" r="7.5" fill="#FF5F56"/>
+  <circle cx="88" cy="52" r="7.5" fill="#FFBD2E"/>
+  <circle cx="114" cy="52" r="7.5" fill="#27C93F"/>
+  <text class="mono small" x="148" y="57" fill="#A6F7BC">anam@github:~/profile</text>
+
+  <rect x="56" y="105" width="5" height="180" rx="2.5" fill="#39FF14" filter="url(#greenGlow)"/>
+  <rect x="70" y="105" width="2" height="180" rx="1" fill="#00E5FF" opacity="0.55" filter="url(#cyanGlow)"/>
+
+  <text class="mono mid flicker" x="92" y="125" fill="#39FF14" font-weight="700">$ init profile --mode hacker-elegant</text>
+  <text class="mono big" x="92" y="170" fill="#EFFFF4" filter="url(#cyanGlow)">Anam Bactiar</text>
+  <text class="mono mid" x="92" y="205" fill="#8FFFB3">Python / JS / Web3 learner</text>
+  <text class="mono small" x="92" y="236" fill="#C9FFD7">Building a stronger developer foundation, one project at a time.</text>
+  <text class="mono mid" x="92" y="277" fill="#00E5FF" font-weight="700">$ status</text>
+  <text class="mono mid" x="180" y="277" fill="#EFFFF4">learning_active</text>
+  <rect class="blink" x="356" y="260" width="11" height="22" fill="#39FF14"/>
+
+  <g class="pulse">
+    <rect x="620" y="126" width="244" height="34" rx="8" fill="#0B2018" stroke="#39FF14"/>
+    <text class="mono small" x="646" y="148" fill="#39FF14" font-weight="700">PYTHON FOUNDATION</text>
+    <rect x="620" y="176" width="244" height="34" rx="8" fill="#201B0B" stroke="#FFBD2E"/>
+    <text class="mono small" x="646" y="198" fill="#FFDB6E" font-weight="700">JS FUNDAMENTALS</text>
+    <rect x="620" y="226" width="244" height="34" rx="8" fill="#0B1720" stroke="#00E5FF"/>
+    <text class="mono small" x="646" y="248" fill="#74F0FF" font-weight="700">WEB3 EXPLORATION</text>
+  </g>
+</svg>
