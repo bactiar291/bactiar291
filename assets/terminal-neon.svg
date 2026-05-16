@@ -1,0 +1,56 @@
+<svg width="920" height="300" viewBox="0 0 920 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="frame" x1="0" y1="0" x2="920" y2="300" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#39FF14"/>
+      <stop offset="0.45" stop-color="#00E5FF"/>
+      <stop offset="1" stop-color="#7C3AED"/>
+    </linearGradient>
+    <linearGradient id="leftGlow" x1="0" y1="0" x2="0" y2="300" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#39FF14"/>
+      <stop offset="0.55" stop-color="#00E5FF"/>
+      <stop offset="1" stop-color="#39FF14"/>
+    </linearGradient>
+    <filter id="glow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feColorMatrix in="blur" type="matrix" values="0 0 0 0 0.223 0 0 0 0 1 0 0 0 0 0.078 0 0 0 0.95 0"/>
+      <feMerge>
+        <feMergeNode/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse">
+      <path d="M32 0H0V32" stroke="#1B3B34" stroke-width="1" opacity="0.35"/>
+    </pattern>
+  </defs>
+
+  <rect width="920" height="300" rx="18" fill="#050807"/>
+  <rect x="1" y="1" width="918" height="298" rx="17" stroke="url(#frame)" stroke-width="2" opacity="0.9"/>
+  <rect x="0" y="0" width="920" height="300" rx="18" fill="url(#grid)" opacity="0.55"/>
+
+  <rect x="28" y="26" width="864" height="248" rx="14" fill="#07110D" stroke="#173A2C"/>
+  <rect x="28" y="26" width="864" height="44" rx="14" fill="#0D1712"/>
+  <path d="M28 56H892" stroke="#183C2D" stroke-width="1"/>
+
+  <circle cx="54" cy="48" r="7" fill="#FF5F56"/>
+  <circle cx="77" cy="48" r="7" fill="#FFBD2E"/>
+  <circle cx="100" cy="48" r="7" fill="#27C93F"/>
+  <text x="132" y="53" fill="#7CEFA2" font-family="Consolas, Monaco, monospace" font-size="14">bactiar@github:~/profile</text>
+
+  <rect x="45" y="88" width="4" height="158" rx="2" fill="url(#leftGlow)" filter="url(#glow)"/>
+
+  <text x="72" y="112" fill="#39FF14" font-family="Consolas, Monaco, monospace" font-size="18" font-weight="700">$ whoami</text>
+  <text x="72" y="144" fill="#E9FFF0" font-family="Consolas, Monaco, monospace" font-size="22" font-weight="700">Bactiar Anam</text>
+  <text x="72" y="176" fill="#8FFFB3" font-family="Consolas, Monaco, monospace" font-size="17">Early-stage developer focused on Python, JS, and Web3.</text>
+
+  <text x="72" y="219" fill="#00E5FF" font-family="Consolas, Monaco, monospace" font-size="18" font-weight="700">$ current_path</text>
+  <text x="72" y="250" fill="#E9FFF0" font-family="Consolas, Monaco, monospace" font-size="17">learn -> build -> review -> improve -> publish</text>
+
+  <rect x="625" y="100" width="210" height="34" rx="8" fill="#0B2018" stroke="#39FF14" opacity="0.95"/>
+  <text x="650" y="123" fill="#39FF14" font-family="Consolas, Monaco, monospace" font-size="15" font-weight="700">PYTHON</text>
+
+  <rect x="625" y="148" width="210" height="34" rx="8" fill="#201B0B" stroke="#FFBD2E" opacity="0.95"/>
+  <text x="650" y="171" fill="#FFDB6E" font-family="Consolas, Monaco, monospace" font-size="15" font-weight="700">JS</text>
+
+  <rect x="625" y="196" width="210" height="34" rx="8" fill="#200B16" stroke="#FF5F56" opacity="0.95"/>
+  <text x="650" y="219" fill="#FF8A80" font-family="Consolas, Monaco, monospace" font-size="15" font-weight="700">WEB3</text>
+</svg>
